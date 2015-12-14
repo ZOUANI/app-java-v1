@@ -15,6 +15,7 @@ public class User {
     private String id;
     private String password;
     private int bloqued;
+    private String role;
 
     public User() {
     }
@@ -78,6 +79,14 @@ public class User {
 
     public void setBloqued(int bloqued) {
         this.bloqued = bloqued;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
     
     
