@@ -15,22 +15,16 @@ public class Transaction {
     private String typePaiement;
     private double montant;
     private Compte compte = new Compte();
-    private static int cmp;
     
-    private void generateId(){
-        cmp++;
-        id=cmp;
-    }
+ 
 
     public Transaction() {
-        generateId();
     }
 
     public Transaction(String type, String typePaiement, double montant) {
         this.type = type;
         this.typePaiement = typePaiement;
         this.montant = montant;
-        generateId();
     }
     
     
